@@ -1,0 +1,16 @@
+{
+  "Type": [
+    {
+      "id": 77,
+      "description": "Shoes"
+    },
+    {
+      "id": 17,
+      "description": "Pants"
+    },
+    {
+      "id": 7,
+      "description": "Jacket"
+    }
+  ]
+}
