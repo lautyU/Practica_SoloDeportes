@@ -35,9 +35,14 @@ namespace Practica_SoloDeportes.Controllers
             var JsonFile = new InteractionJson();
             return Ok(JsonFile.AddTM());
         }
+
+
+
+//-----------------------------------------------------------------
+
         // PUT api/<TradeMarkController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateTM()
+        public async Task<IActionResult>UpdateTM()
         {
             var JsonFile = new InteractionJson();
             return Ok(JsonFile.UpdateTM());
@@ -50,5 +55,7 @@ namespace Practica_SoloDeportes.Controllers
             var JsonFile = new InteractionJson();
             return Ok(JsonFile.DeleteTM());
         }
+
+
     }
 }

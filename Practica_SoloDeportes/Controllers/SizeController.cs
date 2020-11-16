@@ -14,9 +14,10 @@ namespace Practica_SoloDeportes.Controllers
     {
         // GET: api/<SizeController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> GetS()
         {
-            return new string[] { "value1", "value2" };
+            var JsonFile = new InteractionJson();
+            return Ok(JsonFile.GetS());
         }
 
         // GET api/<SizeController>/5
@@ -28,20 +29,27 @@ namespace Practica_SoloDeportes.Controllers
 
         // POST api/<SizeController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult>AddSize()
         {
+            var JsonFile= new InteractionJson();
+            return Ok(JsonFile.AddSize());
+    
         }
 
         // PUT api/<SizeController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult>UpdateSize()
         {
+            var JsonFile = new InteractionJson();
+            return Ok(JsonFile.UpdateSize());
         }
 
         // DELETE api/<SizeController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+       public async Task<IActionResult>DeletedSize()
         {
+            var JsonFile = new InteractionJson();
+            return Ok(JsonFile.DeleteSize());
         }
     }
 }

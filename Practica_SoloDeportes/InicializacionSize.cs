@@ -5,13 +5,10 @@ using System.Threading.Tasks;
 
 namespace Practica_SoloDeportes
 {
-    public class InicializacionTradeMark
+    public class InicializacionSize
     {
         public int id { get; set; }
+
         public string description { get; set; }
-
     }
-
-    
-   
 }

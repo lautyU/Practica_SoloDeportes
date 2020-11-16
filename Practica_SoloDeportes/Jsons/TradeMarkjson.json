@@ -1,12 +1,18 @@
-{
-  "TradeMark": [
-    {
-      "id": 77,
-      "description": "Rebook"
-    },
-    {
-      "id": 7,
-      "description": "Converse"
-    }
-  ]
-}
+[
+  {
+    "id": 77,
+    "description": "Rebook"
+  },
+  {
+    "id": 17,
+    "description": "Fila"
+  },
+  {
+    "id": 7,
+    "description": "Converse"
+  },
+  {
+    "id": 62,
+    "description": "haha"
+  }
+]
